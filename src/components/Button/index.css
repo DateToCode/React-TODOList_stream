@@ -1,0 +1,22 @@
+button {
+  padding: 8px;
+  border-radius: 4px;
+  border: 1px solid #5e5e5e;
+  cursor: pointer;
+  outline: none;
+}
+
+button.success {
+  background-color: green;
+  color: #fff;
+}
+
+button.danger {
+  background-color: red;
+  color: #fff;
+}
+
+button.warning {
+  background-color: yellow;
+  color: #000;
+}

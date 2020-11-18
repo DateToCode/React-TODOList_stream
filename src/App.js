@@ -1,25 +1,41 @@
-import logo from './logo.svg';
-import './App.css';
+// export default Input
+import Input from "./components/Input";
+// export {Input}
+// import {Input} from "./componets/Input";
 
-function App() {
+import Button from "./components/Button";
+
+const App = () => {
+  let nombre = "Sergio";
+
+  let handleButtonClick = (e) => {
+    alert(`El boton se ha pulsado ${nombre}`);
+  };
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <Input placeholder="Hola a todos" type="text" />
+      <Button
+        type="button"
+        label="Pulsame"
+        onClick={handleButtonClick}
+        classes={["success"]}
+      />
+      <Button
+        type="button"
+        label="Pulsame"
+        onClick={handleButtonClick}
+        classes={["danger"]}
+      />
+      <Button
+        type="button"
+        label="Pulsame"
+        onClick={handleButtonClick}
+        classes={["warning"]}
+      />
+      <h1>Bienvenidos al nuevo curso de React {nombre}</h1>
     </div>
   );
-}
+};
 
 export default App;
