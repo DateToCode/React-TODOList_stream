@@ -6,3 +6,11 @@ input {
   outline: none;
   border-radius: 4px;
 }
+
+.mr-2 {
+  margin-right: 2rem;
+}
+
+input.fullWidth {
+  flex: 1;
+}
