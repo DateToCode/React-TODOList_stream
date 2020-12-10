@@ -1,11 +1,15 @@
 import PropTypes from "prop-types";
 import Button from "../Button";
 
+import "./index.css";
+
 const ToDoItem = (props) => {
   return (
-    <div>
+    <div className={["todoItem", props.completed ? "completed" : ""].join(" ")}>
+      {/* FORMA 2 <div className={["todoItem", props.completed ? "todoItem-completed" : ""].join(" ")}> */}
+      {/* FORMA 3 <div className={props.completed ? "todoItem-completed" : "todoItem"}> */}
       <h4>{props.title}</h4>
-      <div>
+      <div className="todoItem__actions">
         {/* Complete button */}
         {!props.completed && (
           <Button

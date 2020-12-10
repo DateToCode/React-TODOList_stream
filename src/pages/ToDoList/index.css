@@ -1,0 +1,18 @@
+.todoList {
+  padding: 4% 2%;
+}
+
+.todoList__form {
+  display: flex;
+  align-items: center;
+}
+
+.todoList__list {
+  display: flex;
+  flex-direction: column;
+  margin-top: 40px;
+}
+
+.todoList__list > *:not(:first-child) {
+  margin-top: 20px;
+}

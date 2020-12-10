@@ -9,6 +9,10 @@ export default class ButtonClass extends Component {
     label: PropTypes.string.isRequired,
   };
 
+  componentDidMount() {
+    // Nuestro componente ha sido cargado correctamente
+  }
+
   render() {
     return (
       <button
